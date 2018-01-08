@@ -8,6 +8,8 @@
 #默认情况下，用root(空)登录mysql数据库，备份至/root/dbxxxxx.tgz
 #可以将这个脚本放进crontab，每天5点02分执行一次，自动备份 20 5 * * * root sh /data2/public/lixiangyong/MariaDBbackup/MariaDBbackup.sh 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+export $PATH
 DBName="biolxyDB"   #mysql 
 DBUser="root" 
 DBPasswd="root"
